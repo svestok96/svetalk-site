@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SveTalk — English with Sveta</title>
+  <meta name="description" content="SveTalk — English with Sveta: gentle grammar, confident speaking, useful materials, courses and playful learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <div id="mouse-glow"></div>
+    <div id="floating-glyphs"></div>
+  </div>
+
+  <header class="hero shell">
+    <nav class="nav container">
+      <a href="index.html" class="brand">SveTalk</a>
+
+      <div class="nav-side">
+        <div class="nav-links">
+          <a href="#about" data-i18n="nav_about">Обо мне</a>
+          <a href="materials.html" data-i18n="nav_materials">Полезные материалы</a>
+          <a href="courses.html" data-i18n="nav_courses">Курсы</a>
+          <a href="#socials" data-i18n="nav_socials">Мои соцсети</a>
+          <a href="https://lexiworld.org/" target="_blank" rel="noreferrer" data-i18n="nav_game">Игра</a>
+          <a href="#contact" data-i18n="nav_contact">Связаться</a>
+        </div>
+
+        <div class="lang-menu">
+          <button class="icon-button globe-button" id="langToggle" aria-label="Language" aria-expanded="false">🌐</button>
+          <div class="lang-dropdown" id="langDropdown">
+            <button class="lang-item active" data-lang="ru">Русский</button>
+            <button class="lang-item" data-lang="en">English</button>
+            <button class="lang-item" data-lang="pl">Polski</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1 data-i18n="hero_title">Английский без стыда</h1>
+        <p class="lead" data-i18n="hero_lead">Я помогаю тебе спокойно разобраться в grammar, увереннее говорить и не теряться в реальной жизни на английском.</p>
+
+        <ul class="hero-points">
+          <li data-i18n="hero_point_1">Грамматика — мягко, понятно и без ощущения “со мной что-то не так”</li>
+          <li data-i18n="hero_point_2">Сильный акцент на speaking, чтобы ты не боялся(ась) говорить</li>
+          <li data-i18n="hero_point_3">Учим не только слова, но и то, что люди имеют в виду между строк</li>
+        </ul>
+
+        <div class="hero-actions">
+          <a class="btn" href="#about" data-i18n="hero_cta_secondary">Узнай обо мне больше</a>
+        </div>
+      </div>
+
+      <div class="hero-visual card-light">
+        <div class="photo-frame">
+          <img src="assets/sveta-hero.jpg" alt="Sveta" class="hero-photo" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container" id="about">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="about_eyebrow">Обо мне</p>
+        <h2 data-i18n="about_title">Я знаю, каково это — чувствовать себя худшей версией себя из-за языка</h2>
+      </div>
+
+      <div class="two-col">
+        <div class="card-light">
+          <p data-i18n="about_text_1">Я — Света. Я переехала жить в Польшу в 17, окончила English Studies и получила TEFL. Но для меня язык — не только про дипломы. Я очень хорошо знаю чувство, когда незнание языка делает тебя тише, зажатее и как будто less you.</p>
+          <p data-i18n="about_text_2">Поэтому на моих уроках много ясности, поддержки и нормального человеческого объяснения. Я нежно раскладываю grammar по полочкам, много работаю со speaking и помогаю выйти из режима “я всё понимаю, но говорить страшно”. Я много путешествую, люблю новые культуры и уже посетила 32 страны — поэтому язык для меня всегда про людей, жизнь и connection.</p>
+        </div>
+
+        <div class="card-light checklist">
+          <h3 data-i18n="about_list_title">Со мной тебе подойдёт, если ты хочешь:</h3>
+          <ul>
+            <li data-i18n="about_list_1">перестать стесняться говорить и звучать увереннее</li>
+            <li data-i18n="about_list_2">разобраться в грамматике без стресса и shame spiral</li>
+            <li data-i18n="about_list_3">лучше понимать людей, контекст и hidden meaning</li>
+            <li data-i18n="about_list_4">учиться в тёплой атмосфере и видеть реальный прогресс</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="socials">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="socials_eyebrow">Мои соцсети</p>
+          <h2 data-i18n="socials_title">Контент, мини-уроки и связь со мной</h2>
+        </div>
+
+        <div class="cards-3">
+          <a class="card-light social-card" href="https://www.instagram.com/svetalk.official/?hl=en" target="_blank" rel="noreferrer">
+            <h3>Instagram</h3>
+            <p data-i18n="social_1">Контент, stories, эстетика, everyday English и жизнь behind the scenes.</p>
+          </a>
+          <a class="card-light social-card" href="https://www.youtube.com/@svetalk" target="_blank" rel="noreferrer">
+            <h3>YouTube</h3>
+            <p data-i18n="social_2">Длинные разборы, видео-уроки и материалы, когда хочется deeper dive.</p>
+          </a>
+          <a class="card-light social-card" href="https://www.tiktok.com/@svetalk.official?_r=1&_t=ZN-94iVLlowr4Q" target="_blank" rel="noreferrer">
+            <h3>TikTok</h3>
+            <p data-i18n="social_3">Короткие видео, энергия, полезности и английский без занудства.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="explore">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="explore_eyebrow">Исследуй SveTalk</p>
+        <h2 data-i18n="explore_title">Не только уроки, but also more</h2>
+      </div>
+
+      <div class="cards-3">
+        <a class="card-light feature-card" href="materials.html">
+          <span class="mini-label" data-i18n="feature_1_label">Полезные материалы</span>
+          <h3 data-i18n="feature_1_title">Мини-уроки, заметки и объяснения</h3>
+          <p data-i18n="feature_1_text">Отдельная страница, куда можно добавлять полезные материалы и обучающий контент.</p>
+        </a>
+
+        <a class="card-light feature-card" href="courses.html">
+          <span class="mini-label" data-i18n="feature_2_label">Курсы</span>
+          <h3 data-i18n="feature_2_title">Будущие программы и продукты</h3>
+          <p data-i18n="feature_2_text">Отдельное место для курсов, которые мы с тобой потом красиво упакуем.</p>
+        </a>
+
+        <a class="card-light feature-card" href="https://lexiworld.org/" target="_blank" rel="noreferrer">
+          <span class="mini-label" data-i18n="feature_3_label">Игра</span>
+          <h3 data-i18n="feature_3_title">LexiWorld</h3>
+          <p data-i18n="feature_3_text">Игровой формат, куда можно отправлять учеников за practice в more fun way.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="contact">
+      <div class="container">
+        <div class="cta card-light">
+          <div>
+            <p class="eyebrow" data-i18n="contact_eyebrow">Контакты</p>
+            <h2 data-i18n="contact_title">Если тебе откликается мой подход — let’s talk</h2>
+            <p data-i18n="contact_text">Пока кнопку записи мы можем донастроить позже, но уже сейчас ты можешь написать мне через Instagram или посмотреть мой контент на YouTube и TikTok.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn" href="https://www.instagram.com/svetalk.official/?hl=en" target="_blank" rel="noreferrer" data-i18n="contact_btn_1">Написать в Instagram</a>
+            <a class="ghost-link" href="https://www.youtube.com/@svetalk" target="_blank" rel="noreferrer" data-i18n="contact_btn_2">Открыть YouTube</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const translations = {
+      ru: {
+        nav_about: 'Обо мне', nav_materials: 'Полезные материалы', nav_courses: 'Курсы', nav_socials: 'Мои соцсети', nav_game: 'Игра', nav_contact: 'Связаться',
+        hero_title: 'Английский без стыда',
+        hero_lead: 'Я помогаю тебе спокойно разобраться в grammar, увереннее говорить и не теряться в реальной жизни на английском.',
+        hero_point_1: 'Грамматика — мягко, понятно и без ощущения “со мной что-то не так”',
+        hero_point_2: 'Сильный акцент на speaking, чтобы ты не боялся(ась) говорить',
+        hero_point_3: 'Учим не только слова, но и то, что люди имеют в виду между строк',
+        hero_cta_secondary: 'Узнать обо мне',
+        about_eyebrow: 'Обо мне', about_title: 'Я знаю, каково это — чувствовать себя худшей версией себя из-за языка',
+        about_text_1: 'Я — Света. Я переехала жить в Польшу в 17, окончила English Studies и получила TEFL. Но для меня язык — не только про дипломы. Я очень хорошо знаю чувство, когда незнание языка делает тебя тише, зажатее и как будто less you.',
+        about_text_2: 'Поэтому на моих уроках много ясности, поддержки и нормального человеческого объяснения. Я нежно раскладываю grammar по полочкам, много работаю со speaking и помогаю выйти из режима “я всё понимаю, но говорить страшно”. Я много путешествую, люблю новые культуры и уже посетила 32 страны — поэтому язык для меня всегда про людей, жизнь и connection.',
+        about_list_title: 'Со мной тебе подойдёт, если ты хочешь:', about_list_1: 'перестать стесняться говорить и звучать увереннее', about_list_2: 'разобраться в грамматике без стресса и shame spiral', about_list_3: 'лучше понимать людей, контекст и hidden meaning', about_list_4: 'учиться в тёплой атмосфере и видеть реальный прогресс',
+        socials_eyebrow: 'Мои соцсети', socials_title: 'Контент, мини-уроки и связь со мной',
+        social_1: 'Контент, stories, эстетика, everyday English и жизнь behind the scenes.', social_2: 'Длинные разборы, видео-уроки и материалы, когда хочется deeper dive.', social_3: 'Короткие видео, энергия, полезности и английский без занудства.',
+        explore_eyebrow: 'Исследуй SveTalk', explore_title: 'Не только уроки, but also more',
+        feature_1_label: 'Полезные материалы', feature_1_title: 'Мини-уроки, заметки и объяснения', feature_1_text: 'Отдельная страница, куда можно добавлять полезные материалы и обучающий контент.',
+        feature_2_label: 'Курсы', feature_2_title: 'Будущие программы и продукты', feature_2_text: 'Отдельное место для курсов, которые мы с тобой потом красиво упакуем.',
+        feature_3_label: 'Игра', feature_3_title: 'LexiWorld', feature_3_text: 'Игровой формат, куда можно отправлять учеников за practice в more fun way.',
+        contact_eyebrow: 'Контакты', contact_title: 'Если тебе откликается мой подход — let’s talk', contact_text: 'Пока кнопку записи мы можем донастроить позже, но уже сейчас ты можешь написать мне через Instagram или посмотреть мой контент на YouTube и TikTok.', contact_btn_1: 'Написать в Instagram', contact_btn_2: 'Открыть YouTube'
+      },
+      en: {
+        nav_about: 'About', nav_materials: 'Useful materials', nav_courses: 'Courses', nav_socials: 'My socials', nav_game: 'Game', nav_contact: 'Contact',
+        hero_title: 'English without shame',
+        hero_lead: 'I help you understand grammar calmly, speak with more confidence, and stop getting lost in real-life English.',
+        hero_point_1: 'Grammar explained gently, clearly, and without the feeling that something is wrong with you',
+        hero_point_2: 'A strong focus on speaking so you stop being afraid to talk',
+        hero_point_3: 'We learn not only words, but what people actually mean between the lines',
+        hero_cta_secondary: 'About me',
+        about_eyebrow: 'About me', about_title: 'I know what it feels like to become a worse version of yourself because of language',
+        about_text_1: 'I’m Sveta. I moved to Poland at 17, studied English Studies, and earned a TEFL certificate. But for me, language is not just about credentials. I know very well what it feels like when not knowing the language makes you quieter, more tense, and somehow less you.',
+        about_text_2: 'That is why my lessons are full of clarity, support, and actual human explanations. I explain grammar gently, focus a lot on speaking, and help you leave the “I understand everything but I’m scared to speak” mode behind. I travel a lot, love discovering new cultures, and have visited 32 countries so far — so to me language is always about people, life, and connection.',
+        about_list_title: 'Working with me is a great fit if you want to:', about_list_1: 'stop feeling shy when speaking and sound more confident', about_list_2: 'understand grammar without stress or a shame spiral', about_list_3: 'better understand people, context, and hidden meaning', about_list_4: 'learn in a warm atmosphere and see real progress',
+        socials_eyebrow: 'My socials', socials_title: 'Content, mini-lessons, and ways to reach me',
+        social_1: 'Content, stories, aesthetics, everyday English, and behind-the-scenes life.', social_2: 'Longer breakdowns, video lessons, and materials when you want a deeper dive.', social_3: 'Short videos, energy, useful tips, and English without boring vibes.',
+        explore_eyebrow: 'Explore SveTalk', explore_title: 'Not just lessons, but also more',
+        feature_1_label: 'Useful materials', feature_1_title: 'Mini-lessons, notes, and explanations', feature_1_text: 'A separate page where useful materials and teaching content can live.',
+        feature_2_label: 'Courses', feature_2_title: 'Future programs and products', feature_2_text: 'A separate place for courses we will build and package later.',
+        feature_3_label: 'Game', feature_3_title: 'LexiWorld', feature_3_text: 'A playful format you can send students to for practice in a more fun way.',
+        contact_eyebrow: 'Contact', contact_title: 'If my approach feels right to you — let’s talk', contact_text: 'We can polish the booking button later, but for now you can message me through Instagram or explore my content on YouTube and TikTok.', contact_btn_1: 'Message on Instagram', contact_btn_2: 'Open YouTube'
+      },
+      pl: {
+        nav_about: 'O mnie', nav_materials: 'Przydatne materiały', nav_courses: 'Kursy', nav_socials: 'Moje social media', nav_game: 'Gra', nav_contact: 'Kontakt',
+        hero_title: 'Angielski bez wstydu',
+        hero_lead: 'Pomagam ci spokojnie zrozumieć grammar, mówić pewniej i nie gubić się w prawdziwym angielskim.',
+        hero_point_1: 'Gramatyka tłumaczona łagodnie, jasno i bez poczucia, że coś jest z tobą nie tak',
+        hero_point_2: 'Duży nacisk na speaking, żebyś przestał/przestała bać się mówić',
+        hero_point_3: 'Uczymy się nie tylko słów, ale też tego, co ludzie naprawdę mają na myśli między wierszami',
+        hero_cta_secondary: 'Poznaj mnie lepiej',
+        about_eyebrow: 'O mnie', about_title: 'Wiem, jak to jest czuć się gorszą wersją siebie przez język',
+        about_text_1: 'Jestem Sveta. Przeprowadziłam się do Polski w wieku 17 lat, studiowałam English Studies i zdobyłam certyfikat TEFL. Ale dla mnie język to nie tylko dyplomy. Dobrze znam uczucie, kiedy brak języka sprawia, że stajesz się cichsza/cichszy, spięta/spięty i jakby mniej sobą.',
+        about_text_2: 'Dlatego na moich lekcjach jest dużo jasności, wsparcia i normalnych ludzkich wyjaśnień. Delikatnie tłumaczę grammar, mocno stawiam na speaking i pomagam wyjść z trybu „wszystko rozumiem, ale boję się mówić”. Dużo podróżuję, kochам poznawać nowe kultury i odwiedziłam już 32 kraje — dlatego dla mnie język zawsze jest o ludziach, życiu i connection.',
+        about_list_title: 'To dobre miejsce dla ciebie, jeśli chcesz:', about_list_1: 'przestać wstydzić się mówić i brzmieć pewniej', about_list_2: 'zrozumieć gramatykę bez stresu i shame spiral', about_list_3: 'lepiej rozumieć ludzi, kontekst i hidden meaning', about_list_4: 'uczyć się w ciepłej atmosferze i widzieć realny postęp',
+        socials_eyebrow: 'Moje social media', socials_title: 'Content, mini-lekcje i kontakt ze mną',
+        social_1: 'Content, stories, estetyka, everyday English i życie behind the scenes.', social_2: 'Dłuższe analizy, video-lesson i materiały, kiedy chcesz deeper dive.', social_3: 'Krótkie filmy, energia, useful tips i angielski bez nudy.',
+        explore_eyebrow: 'Poznaj SveTalk', explore_title: 'Nie tylko lekcje, but also more',
+        feature_1_label: 'Przydatne materiały', feature_1_title: 'Mini-lekcje, notatki i wyjaśnienia', feature_1_text: 'Osobna strona, gdzie mogą pojawiać się przydatne materiały i teaching content.',
+        feature_2_label: 'Kursy', feature_2_title: 'Przyszłe programy i produkty', feature_2_text: 'Osobne miejsce na kursy, które później razem dopracujemy.',
+        feature_3_label: 'Gra', feature_3_title: 'LexiWorld', feature_3_text: 'Bardziej playful format, do którego można wysyłać uczniów po practice.',
+        contact_eyebrow: 'Kontakt', contact_title: 'Jeśli mój sposób uczenia ci odpowiada — let’s talk', contact_text: 'Przycisk zapisu możemy dopracować później, ale już teraz możesz napisać do mnie przez Instagram albo zobaczyć mój content na YouTube i TikToku.', contact_btn_1: 'Napisz na Instagramie', contact_btn_2: 'Otwórz YouTube'
+      }
+    };
+
+    const translatable = document.querySelectorAll('[data-i18n]');
+    const langToggle = document.getElementById('langToggle');
+    const langDropdown = document.getElementById('langDropdown');
+    const langButtons = document.querySelectorAll('.lang-item');
+
+    function setLanguage(lang) {
+      const dict = translations[lang] || translations.ru;
+      translatable.forEach((el) => {
+        const key = el.dataset.i18n;
+        if (dict[key]) el.textContent = dict[key];
+      });
+      langButtons.forEach((btn) => btn.classList.toggle('active', btn.dataset.lang === lang));
+      document.documentElement.lang = lang;
+      localStorage.setItem('svetaSiteLang', lang);
+    }
+
+    langToggle.addEventListener('click', () => {
+      const isOpen = langDropdown.classList.toggle('open');
+      langToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('.lang-menu')) {
+        langDropdown.classList.remove('open');
+        langToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    langButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        setLanguage(btn.dataset.lang);
+        langDropdown.classList.remove('open');
+        langToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    const savedLang = localStorage.getItem('svetaSiteLang') || 'ru';
+    setLanguage(savedLang);
+
+    const glow = document.getElementById('mouse-glow');
+    const glyphs = document.getElementById('floating-glyphs');
+    const symbols = ['A', 'B', 'C', '?', '&', '+', '→', '英', 'Ł'];
+
+    document.addEventListener('pointermove', (e) => {
+      glow.style.transform = `translate(${e.clientX - 150}px, ${e.clientY - 150}px)`;
+      if (Math.random() > 0.75) {
+        const s = document.createElement('span');
+        s.className = 'glyph';
+        s.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+        s.style.left = `${e.clientX}px`;
+        s.style.top = `${e.clientY}px`;
+        glyphs.appendChild(s);
+        setTimeout(() => s.remove(), 1800);
+      }
+    });
+  </script>
+</body>
+</html>
+ml>
+l>
+ml>
